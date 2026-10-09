@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import HearthLogo from "./HearthLogo";
 
 type HeaderProps = { cartCount: number };
 
@@ -20,10 +21,10 @@ export default function Header({ cartCount }: HeaderProps) {
         <span className="mr-2 text-[#d8ad91]">✦</span> Free shipping on orders over $150
         <span className="absolute right-[6%] hidden text-stone-300 lg:block">Need help? <a href="#footer" className="underline">Contact us</a>　·　English　|　USD</span>
       </div>
-      <header className="relative z-20 flex h-20 items-center justify-between border-b border-stone-100 bg-white px-5 md:px-[6%]">
+      <header className="sticky top-0 z-30 flex h-20 items-center justify-between border-b border-stone-100 bg-white px-5 md:px-[6%]">
         <Link to="/" aria-label="Hearth home" className="flex items-center gap-2 text-2xl font-bold tracking-tight">
-          <span className="grid size-8 place-items-center rounded-full bg-[#282821] font-serif text-white">h</span>
-          <span>hearth<span className="text-[#a75e3b]">.</span></span>
+          <HearthLogo className="h-11 w-11" />
+          <span>Hearth<span className="text-[#a75e3b]">.</span></span>
         </Link>
         <button type="button" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)} className="text-xl md:hidden">☰</button>
         <nav className={`${menuOpen ? "flex" : "hidden"} absolute left-0 right-0 top-full flex-col gap-5 bg-white px-6 py-5 shadow-md md:static md:flex md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0 md:shadow-none`}>
