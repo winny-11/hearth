@@ -1,10 +1,9 @@
 import type { JournalEntry } from "../types";
 import calmLivingRoom from "../assets/calm-living-room.avif";
 import diningRoom from "../assets/dining-room.avif";
-import woodCare from "../assets/dining-chair-guide.jpg";
-import wood from "../assets/wood-care.jpg";
-import diningChair from "../assets/dining-chair-guide.avif";
-import LivingRoom from "../assets/small-living-room.avif";
+import woodCare from "../assets/wood-care.jpg";
+import diningChairGuide from "../assets/dining-chair-guide.jpg";
+import LivingRoom from "../assets/small-living-room.webp";
 
 export const journalEntries: JournalEntry[] = [
   {
@@ -60,7 +59,7 @@ export const journalEntries: JournalEntry[] = [
     "Learn what to consider when pairing chairs with your dining table for comfortable everyday meals.",
   publishedAt: "October 7, 2026",
   comments: 0,
-  image: diningChair,
+  image: diningChairGuide,
 },
 {
   id: "cleaning-wood-furniture",
@@ -71,6 +70,6 @@ export const journalEntries: JournalEntry[] = [
     "Simple care habits can help protect a wooden finish from dust, spills, and everyday marks.",
   publishedAt: "October 1, 2026",
   comments: 0,
-  image: wood,
+  image: woodCare,
 },
 ];
