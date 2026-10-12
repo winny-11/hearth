@@ -1,6 +1,15 @@
 export type ProductCategory = "Popular" | "On sale" | "Best Rated";
 
-
+export type JournalEntry = {
+  id: string;
+  category: string;
+  readTime: string;
+  title: string;
+  image: string;
+  excerpt?: string;
+  publishedAt?: string;
+  comments?: number;
+};
 
 export type Product = {
   id: string;
@@ -18,13 +27,5 @@ export type Collection = {
   number: string;
   name: string;
   subtitle: string;
-  image: string;
-};
-
-export type JournalEntry = {
-  id: string;
-  category: string;
-  readTime: string;
-  title: string;
   image: string;
 };

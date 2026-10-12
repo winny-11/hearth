@@ -51,6 +51,20 @@ body {
   transform: translateY(24px);
 }
 
+.journal-reveal {
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.journal-page[data-reveal-ready="true"] .journal-reveal:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.journal-page .journal-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .about-page .about-reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
@@ -61,7 +75,16 @@ body {
     transition: none;
   }
 
+  .journal-reveal {
+    transition: none;
+  }
+
   .about-page[data-reveal-ready="true"] .about-reveal:not(.is-visible) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .journal-page[data-reveal-ready="true"] .journal-reveal:not(.is-visible) {
     opacity: 1;
     transform: none;
   }
