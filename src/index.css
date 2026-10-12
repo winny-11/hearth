@@ -41,3 +41,28 @@ body {
     transform: none;
   }
 }
+
+.about-reveal {
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.about-page[data-reveal-ready="true"] .about-reveal:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.about-page .about-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-reveal {
+    transition: none;
+  }
+
+  .about-page[data-reveal-ready="true"] .about-reveal:not(.is-visible) {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -108,7 +108,7 @@ export default function ContactPage() {
               type="submit"
               className="rounded-md bg-[#83bd2d] px-10 py-5 text-sm font-semibold text-white transition hover:bg-stone-900"
             >
-              Get a quote
+              Send Message
             </button>
 
             {submitted && (
