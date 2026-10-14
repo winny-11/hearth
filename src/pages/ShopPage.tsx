@@ -52,8 +52,8 @@ export default function ShopPage() {
             type="button"
             onClick={() => selectCategory(item)}
             aria-pressed={selectedCategory === item}
-            className={`transition-colors hover:text-[#83bd2d] ${
-              selectedCategory === item ? "text-[#83bd2d]" : ""
+            className={`transition-colors hover:text-[#a75e3b] ${
+              selectedCategory === item ? "text-[#a75e3b]" : ""
             }`}
           >
             {item}
@@ -96,7 +96,7 @@ export default function ShopPage() {
                 aria-current={page === pageNumber ? "page" : undefined}
                 className={`h-9 w-9 rounded-full text-sm ${
                   page === pageNumber
-                    ? "bg-[#83bd2d] text-white"
+                    ? "bg-[#a75e3b] text-white"
                     : "text-stone-700 hover:bg-stone-100"
                 }`}
               >

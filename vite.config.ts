@@ -15,5 +15,5 @@ export default defineConfig({
     open: true,
   },
 
-  base: "/hearth/",
+  base: "/",
 });

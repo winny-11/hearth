@@ -38,15 +38,15 @@ export default function ContactPage() {
           <Link to="/" className="text-stone-500 hover:text-stone-900">
             Home
           </Link>
-          <span className="mx-2 text-[#83bd2d]">&gt;</span>
-          <span className="text-[#83bd2d]">Contact</span>
+          <span className="mx-2 text-[#a75e3b]">&gt;</span>
+          <span className="text-[#a75e3b]">Contact</span>
         </nav>
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[2fr_1fr] lg:gap-16 lg:px-12 lg:py-24">
         <div>
           <p className="mb-5 text-sm text-stone-600">
-            <span className="mr-3 text-lg text-[#83bd2d]">~</span>
+            <span className="mr-3 text-lg text-[#a75e3b]">~</span>
             Contact us
           </p>
 
@@ -63,7 +63,7 @@ export default function ContactPage() {
                 aria-label="Full name"
                 autoComplete="name"
                 required
-                className="h-14 rounded-md border border-stone-300 px-5 text-sm outline-none focus:border-[#83bd2d]"
+                className="h-14 rounded-md border border-stone-300 px-5 text-sm outline-none focus:border-[#a75e3b]"
               />
 
               <input
@@ -73,7 +73,7 @@ export default function ContactPage() {
                 aria-label="Email address"
                 autoComplete="email"
                 required
-                className="h-14 rounded-md border border-stone-300 px-5 text-sm outline-none focus:border-[#83bd2d]"
+                className="h-14 rounded-md border border-stone-300 px-5 text-sm outline-none focus:border-[#a75e3b]"
               />
 
               <input
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 placeholder="Phone Number"
                 aria-label="Phone number"
                 autoComplete="tel"
-                className="h-14 rounded-md border border-stone-300 px-5 text-sm outline-none focus:border-[#83bd2d]"
+                className="h-14 rounded-md border border-stone-300 px-5 text-sm outline-none focus:border-[#a75e3b]"
               />
 
               <input
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 placeholder="Subject"
                 aria-label="Subject"
                 required
-                className="h-14 rounded-md border border-stone-300 px-5 text-sm outline-none focus:border-[#83bd2d]"
+                className="h-14 rounded-md border border-stone-300 px-5 text-sm outline-none focus:border-[#a75e3b]"
               />
             </div>
 
@@ -101,12 +101,12 @@ export default function ContactPage() {
               aria-label="Message"
               rows={8}
               required
-              className="w-full resize-y rounded-md border border-stone-300 px-5 py-4 text-sm outline-none focus:border-[#83bd2d]"
+              className="w-full resize-y rounded-md border border-stone-300 px-5 py-4 text-sm outline-none focus:border-[#a75e3b]"
             />
 
             <button
               type="submit"
-              className="rounded-md bg-[#83bd2d] px-10 py-5 text-sm font-semibold text-white transition hover:bg-stone-900"
+              className="rounded-md bg-[#a75e3b] px-10 py-5 text-sm font-semibold text-white transition hover:bg-stone-900"
             >
               Send Message
             </button>
@@ -127,21 +127,21 @@ export default function ContactPage() {
 
             <div className="space-y-7 text-sm leading-6 text-stone-500">
               <p>
-                <span className="mr-4 text-[#83bd2d]">⌖</span>
+                <span className="mr-4 text-[#a75e3b]">⌖</span>
                 Hearth online store
                 <br />
                 Add your store address here
               </p>
 
               <p>
-                <span className="mr-4 text-[#83bd2d]">☎</span>
+                <span className="mr-4 text-[#a75e3b]">☎</span>
                 <a href={`tel:${CONTACT_PHONE}`} className="hover:text-stone-900">
                   {CONTACT_PHONE}
                 </a>
               </p>
 
               <p>
-                <span className="mr-4 text-[#83bd2d]">◷</span>
+                <span className="mr-4 text-[#a75e3b]">◷</span>
                 Store hours
                 <br />
                 Add Hearth’s support hours
