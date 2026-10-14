@@ -7,6 +7,7 @@ import ShopPage from "./pages/ShopPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import JournalPage from "./pages/JournalPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 
@@ -22,10 +23,8 @@ function Storefront( ) {
            <Route path="/contact" element={<ContactPage />} />
            <Route path="/about" element={<AboutPage />} />
            <Route path="/journal" element={<JournalPage />} />
-          {/*
-          
           <Route path="*" element={<NotFoundPage />} />
-          */}
+          
         </Routes>
       </main>
       <Footer />
