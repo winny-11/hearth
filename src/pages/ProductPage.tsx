@@ -52,7 +52,7 @@ export default function ProductPage() {
           <img
             src={product.image}
             alt={product.name}
-            className="aspect-4/5 w-full object-cover"
+            className="aspect-4/5 w-full rounded-[20px] object-cover"
           />
         </div>
 
@@ -91,7 +91,7 @@ export default function ProductPage() {
           <button
             type="button"
             onClick={handleAddToCart}
-            className="mt-8 w-full bg-[#a75e3b] px-6 py-4 text-sm font-medium text-white transition hover:bg-[#8f4e30] sm:w-auto"
+            className="mt-8 w-full bg-[#a75e3b] px-6 py-4 text-sm font-medium text-white transition hover:bg-[#8f4e30] sm:w-auto rounded-2xl"
           >
             {added ? "Added to cart ✓" : "Add to cart"}
           </button>

@@ -53,7 +53,7 @@ export default function CartPage() {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="size-28 bg-white object-cover sm:size-36"
+                    className="size-28 rounded-[20px] bg-white object-cover sm:size-36"
                   />
                 </Link>
 
@@ -129,7 +129,7 @@ export default function CartPage() {
 
             <button
               type="button"
-              className="mt-6 w-full bg-[#a75e3b] px-5 py-4 text-sm font-medium text-white transition hover:bg-[#8f4e30]"
+              className="mt-6 w-full bg-[#a75e3b] px-5 py-4 text-sm font-medium text-white transition hover:bg-[#8f4e30] rounded-full"
             >
               Continue to checkout
             </button>
