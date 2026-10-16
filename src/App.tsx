@@ -8,6 +8,10 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import JournalPage from "./pages/JournalPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ProductPage from "./pages/ProductPage";
+import CartPage from "./pages/CartPage";
+
+
 
 
 
@@ -24,7 +28,9 @@ function Storefront( ) {
            <Route path="/about" element={<AboutPage />} />
            <Route path="/journal" element={<JournalPage />} />
           <Route path="*" element={<NotFoundPage />} />
-          
+          <Route path="/product/:productId" element={<ProductPage />} />
+          <Route path="/cart" element={<CartPage />} />
+
         </Routes>
       </main>
       <Footer />
