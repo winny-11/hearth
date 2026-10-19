@@ -25,7 +25,7 @@ export default function CartPage() {
           </p>
           <Link
             to="/shop"
-            className="mt-7 inline-block bg-[#a75e3b] px-6 py-3 text-sm text-white transition hover:bg-[#8f4e30]"
+            className="mt-7 inline-block bg-[#a75e3b] px-6 py-3 text-sm text-white transition hover:bg-[#8f4e30] rounded-full"
           >
             Browse the shop
           </Link>

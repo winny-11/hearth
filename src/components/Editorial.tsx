@@ -94,7 +94,7 @@ export default function HeroSlider() {
 
           <Link
             to="/shop"
-            className="mt-7 inline-flex items-center gap-2 bg-white px-5 py-4 text-xs font-medium text-stone-900 transition hover:bg-[#dfad91]"
+            className="mt-7 inline-flex items-center gap-2 bg-white px-5 py-4 text-xs font-medium text-stone-900 transition hover:bg-[#dfad91] rounded-full"
           >
             {slide.button}
             <span aria-hidden="true">↗</span>
