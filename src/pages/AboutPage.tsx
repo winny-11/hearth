@@ -65,7 +65,7 @@ export default function AboutPage() {
             className="h-90 w-full rounded-md object-cover sm:h-115"
           />
 
-          <div className="bg-white px-6 py-8 text-center shadow-sm md:absolute md:left-1/2 md:top-1/2 md:w-[min(80%,520px)] md:-translate-x-1/2 md:-translate-y-1/2 md:px-12 md:py-10">
+          <div className="bg-stone-100 px-6 py-8 text-center shadow-sm md:absolute md:left-1/2 md:top-1/2 md:w-[min(80%,520px)] md:-translate-x-1/2 md:-translate-y-1/2 md:px-12 md:py-10 rounded-4xl">
             <p className="mb-4 text-sm text-stone-600">
               <span className="mr-3 text-[#a75e3b]">~</span>
               The Hearth story

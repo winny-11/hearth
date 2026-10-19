@@ -15,23 +15,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 1024px) {
-  .home-page[data-reveal-ready="true"] .home-reveal:not(.is-visible) {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-
-  .home-reveal {
-    transition: opacity 700ms ease, transform 700ms ease;
-  }
-
-  .home-reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.home-page[data-reveal-ready="true"] .home-reveal:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(24px);
 }
 
-@media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
+.home-reveal {
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.home-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
   .home-reveal {
     transition: none;
   }

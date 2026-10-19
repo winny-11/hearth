@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import { products } from "../data/products";
 import type { ProductCategory } from "../types";
+import { Link } from "react-router-dom";
 
 const PAGE_SIZE = 8;
 
@@ -42,9 +43,21 @@ export default function ShopPage() {
 
   return (
     <main className="min-h-screen bg-white px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+       <section className="journal-reveal flex flex-col justify-between gap-4 bg-stone-100 px-5 py-8 sm:flex-row sm:items-center sm:px-8 lg:px-12">
+        <h1 className="text-4xl font-bold sm:text-5xl">Shop</h1>
+
+        <nav aria-label="Breadcrumb" className="text-sm font-medium">
+          <Link to="/" className="text-stone-500 hover:text-stone-900">
+            Home
+          </Link>
+          <span className="mx-2 text-[#a75e3b]">&gt;</span>
+          <span className="text-[#a75e3b]">Shop</span>
+        </nav>
+      </section>
+
       <nav
         aria-label="Shop categories"
-        className="mb-11 flex justify-center gap-8 text-sm font-semibold text-stone-500"
+        className="mb-11 mt-11 flex justify-center gap-8 text-sm font-semibold text-stone-500"
       >
         {categories.map((item) => (
           <button
