@@ -5,7 +5,7 @@ export default function Hero() {
         <p className="mb-5 text-[10px] font-semibold tracking-[0.2em] text-stone-500">TIMELESS DESIGN · NATURAL MATERIALS</p>
         <h1 className="font-serif text-6xl leading-[0.98] tracking-tight sm:text-7xl lg:text-8xl">Make Room<br />For <em className="font-normal text-[#a56242]">Beautiful</em><br />Living.</h1>
         <p className="mt-6 max-w-sm text-sm leading-7 text-stone-500">Thoughtful furniture for the way you live today. Crafted to be loved for years.</p>
-        <a href="#products" className="mt-8 inline-flex items-center gap-8 bg-[#282821] px-6 py-4 text-xs text-white transition hover:bg-[#a75e3b]">Shop the collection <span aria-hidden="true">↗</span></a>
+        <a href="#products" className="mt-8 inline-flex items-center gap-8 bg-[#282821] px-6 py-4 text-xs text-white transition hover:bg-[#a75e3b] rounded-4xl">Shop the collection <span aria-hidden="true">↗</span></a>
         <p className="mt-12 text-[10px] tracking-widest text-stone-500"><span className="text-stone-900">01</span><span className="mx-3 inline-block w-12 border-t border-stone-400 align-middle" />03</p>
       </div>
       <div className="relative min-h-90 overflow-hidden md:min-h-155">
